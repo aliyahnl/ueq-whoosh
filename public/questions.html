@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuesioner UEQ</title>
+    <link rel="icon" href="./images/UEQ.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="landing.html">
+                <img src="./images/UEQ.png" alt="UEQ">
+            </a>
+        </div>
+        <ul>
+            <li><a href="intro.html">Kuesioner</a></li>
+            <li><a href="results.html">Hasil</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+    <div id="intro" class="content">
+        <div class="image-box">
+            <img src="./images/whoosh.png" alt="Whoosh Logo" class="header-image">
+        </div>
+
+        <div class="description-box2">
+            <h3>Kuesioner Pengalaman Penggunaan Aplikasi Whoosh</h3>
+            <p>Pertanyaan ini berkaitan dengan pengalaman penggunaan aplikasi Whoosh</p>
+            <p>Petunjuk Pengisian:</p>
+            <p>1. Kuesioner terdiri dari 26 pertanyaan</p>
+            <p>2. Silakan pilih jawaban yang sesuai dengan pengalaman Anda dengan memilih antara angka 1 hingga 7</p>
+            <p>3. Keterangan Penelitian:</p>
+            <ul>
+                <li>Jika Anda memilih angka yang lebih ke arah kiri/atas, maka Anda akan menyetujui pernyataan yang terletak di sebelah kiri/atas.</li>
+                <li>Jika Anda memilih angka yang lebih ke arah kanan/bawah, maka Anda akan menyetujui pernyataan yang terletak di sebelah kanan/bawah.</li>
+                <li>Jika Anda memilih angka 4, maka Anda memilih jawaban netral terhadap kedua pernyataan.</li>
+            </ul>
+            <p>4. Mohon jawab pertanyaan berdasarkan pengalaman Anda menggunakan aplikasi Whoosh.</p>
+            <p><b>Tidak ada jawaban benar atau salah.</b></p>
+        </div>
+
+        <form id="combinedForm">
+            <fieldset>
+                <legend>Nama</legend>
+                <input type="text" id="name" name="name" placeholder="Your answer" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Usia</legend>
+                <div class="radio-group2">
+                    <div class="radio-buttons2">
+                        <input type="radio" id="usia1" name="usia" value="< 20 tahun" required>
+                        <label for="usia1">&lt; 20 tahun</label>
+                        <input type="radio" id="usia2" name="usia" value="20 - 30 tahun">
+                        <label for="usia2">20 - 30 tahun</label>
+                        <input type="radio" id="usia3" name="usia" value="30 - 40 tahun">
+                        <label for="usia3">30 - 40 tahun</label>
+                        <input type="radio" id="usia4" name="usia" value="> 40 tahun">
+                        <label for="usia4">&gt; 40 tahun</label>
+                    </div>
+                </div>
+            </fieldset>            
+
+            <fieldset>
+                <legend>Jenis Kelamin</legend>
+                <div class="radio-group2">
+                    <div class="radio-buttons2">
+                        <input type="radio" id="gender1" name="gender" value="Wanita" required>
+                        <label for="gender1">Wanita</label>
+
+                        <input type="radio" id="gender2" name="gender" value="Pria">
+                        <label for="gender2">Pria</label>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset class="aspect">
+                <legend>1. Bagaimana pengalaman Anda saat menggunakan aplikasi Whoosh?</legend>
+                <div class="radio-group">
+                    <span>Menyusahkan</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="A1" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="A1" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="A1" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="A1" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="A1" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="A1" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="A1" value="3">
+                        </label>
+                    </div>
+                    <span>Menyenangkan</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>2. Menurut Anda seberapa mudah informasi/fitur pada aplikasi Whoosh untuk dipahami?</legend>
+                <div class="radio-group">
+                    <span>Tidak dapat dipahami</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="P1" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="P1" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="P1" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="P1" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="P1" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="P1" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="P1" value="3">
+                        </label>
+                    </div>
+                    <span>Dapat dipahami</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>3. Menurut Anda apakah aplikasi Whoosh kreatif/monoton (biasa saja)?</legend>
+                <div class="radio-group">
+                    <span>Kreatif</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="N1" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="N1" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="N1" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="N1" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="N1" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="N1" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="N1" value="-3">
+                        </label>
+                    </div>
+                    <span>Monoton</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>4. Menurut Anda apakah aplikasi Whoosh mudah untuk dipelajari?</legend>
+                <div class="radio-group">
+                    <span>Mudah dipelajari</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="P2" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="P2" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="P2" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="P2" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="P2" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="P2" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="P2" value="-3">
+                        </label>
+                    </div>
+                    <span>Sulit dipelajari</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>5. Menurut Anda apakah aplikasi Whoosh bermanfaat?</legend>
+                <div class="radio-group">
+                    <span>Bermanfaat</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="S1" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="S1" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="S1" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="S1" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="S1" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="S1" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="S1" value="-3">
+                        </label>
+                    </div>
+                    <span>Tidak bermanfaat</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>6. Bagaimana tanggapan Anda saat mengakses aplikasi Whoosh?</legend>
+                <div class="radio-group">
+                    <span>Membosankan</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="S2" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="S2" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="S2" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="S2" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="S2" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="S2" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="S2" value="3">
+                        </label>
+                    </div>
+                    <span>Mengasyikkan</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>7. Menurut Anda seberapa menarik aplikasi Whoosh?</legend>
+                <div class="radio-group">
+                    <span>Tidak menarik</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="S3" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="S3" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="S3" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="S3" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="S3" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="S3" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="S3" value="3">
+                        </label>
+                    </div>
+                    <span>Menarik</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>8. Menurut Anda apakah aplikasi Whoosh dapat diprediksi bentuk interaksi isi/kontennya?</legend>
+                <p>Contoh:
+                    <ul>
+                        <li>Klik ikon <i>home</i> muncul halaman <i>profile</i> -> tidak dapat diprediksi</li>
+                        <li>Klik ikon <i>profile</i> muncul halaman <i>profile</i> -> dapat diprediksi</li>
+                    </ul>
+                </p>
+                <div class="radio-group">
+                    <span>Tidak dapat diprediksi</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="D1" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="D1" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="D1" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="D1" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="D1" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="D1" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="D1" value="3">
+                        </label>
+                    </div>
+                    <span>Dapat diprediksi</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>9. Menurut Anda seberapa cepat performa aplikasi Whoosh saat digunakan?</legend>
+                <div class="radio-group">
+                    <span>Cepat</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="E1" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="E1" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="E1" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="E1" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="E1" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="E1" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="E1" value="-3">
+                        </label>
+                    </div>
+                    <span>Lambat</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>10. Menurut Anda apakah aplikasi Whoosh berdaya cipta tinggi (inovatif)?</legend>
+                <div class="radio-group">
+                    <span>Berdaya cipta</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="N2" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="N2" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="N2" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="N2" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="N2" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="N2" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="N2" value="-3">
+                        </label>
+                    </div>
+                    <span>Konvensional</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>11. Bagaimana peran aplikasi Whoosh dalam membantu Anda mencapai tujuan?</legend>
+                <p>Contoh:
+                    <ul>
+                        <li>Pesan tiket <i>business class</i>, dapat tiket <i>economy class</i> -> menghalangi</li>
+                        <li>Pesan tiket <i>business class</i>, dapat tiket <i>business class</i> -> mendukung</li>
+                    </ul>
+                </p>
+                <div class="radio-group">
+                    <span>Menghalangi</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="D2" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="D2" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="D2" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="D2" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="D2" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="D2" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="D2" value="3">
+                        </label>
+                    </div>
+                    <span>Mendukung</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>12. Bagaimana penilaian Anda secara keseluruhan terhadap aplikasi Whoosh?</legend>
+                <div class="radio-group">
+                    <span>Baik</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="A2" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="A2" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="A2" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="A2" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="A2" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="A2" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="A2" value="-3">
+                        </label>
+                    </div>
+                    <span>Buruk</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>13. Bagaimana tanggapan Anda terkait tampilan dan menu pada aplikasi Whoosh?</legend>
+                <div class="radio-group">
+                    <span>Rumit</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="P3" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="P3" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="P3" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="P3" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="P3" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="P3" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="P3" value="3">
+                        </label>
+                    </div>
+                    <span>Sederhana</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>14. Menurut Anda kesan apa yang dihasilkan aplikasi Whoosh?</legend>
+                <div class="radio-group">
+                    <span>Tidak disukai</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="A3" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="A3" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="A3" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="A3" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="A3" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="A3" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="A3" value="3">
+                        </label>
+                    </div>
+                    <span>Disukai</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>15. Menurut Anda apakah aplikasi Whoosh lebih baik dan terdepan dibandingkan dengan aplikasi sejenis lainnya?</legend>
+                <div class="radio-group">
+                    <span>Lazim (sudah umum)</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="N3" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="N3" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="N3" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="N3" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="N3" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="N3" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="N3" value="3">
+                        </label>
+                    </div>
+                    <span>Terdepan</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>16. Menurut Anda seberapa nyaman aplikasi Whoosh saat digunakan?</legend>
+                <div class="radio-group">
+                    <span>Tidak nyaman</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="A4" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="A4" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="A4" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="A4" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="A4" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="A4" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="A4" value="3">
+                        </label>
+                    </div>
+                    <span>Nyaman</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>17. Menurut Anda seberapa aman aplikasi Whoosh saat digunakan?</legend>
+                <div class="radio-group">
+                    <span>Aman</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="D3" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="D3" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="D3" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="D3" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="D3" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="D3" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="D3" value="-3">
+                        </label>
+                    </div>
+                    <span>Tidak aman</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>18. Menurut Anda apakah aplikasi Whoosh memotivasi Anda untuk mencapai tujuan?</legend>
+                <p>Contoh: berhasil membeli tiket kereta cepat -> memotivasi
+                </p>
+                <div class="radio-group">
+                    <span>Memotivasi</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="S4" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="S4" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="S4" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="S4" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="S4" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="S4" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="S4" value="-3">
+                        </label>
+                    </div>
+                    <span>Tidak memotivasi</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>19. Menurut Anda apakah aplikasi Whoosh memenuhi ekspektasi/harapan Anda?</legend>
+                <p>Contoh: berhasil melakukan pengembalian tiket (<i>refund</i>) -> memenuhi ekspektasi
+                </p>
+                <div class="radio-group">
+                    <span>Memenuhi ekspektasi</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="D4" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="D4" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="D4" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="D4" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="D4" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="D4" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="D4" value="-3">
+                        </label>
+                    </div>
+                    <span>Tidak memenuhi ekspektasi</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>20. Menurut Anda seberapa efisien aplikasi Whoosh saat digunakan?</legend>
+                <div class="radio-group">
+                    <span>Tidak efisien</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="E2" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="E2" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="E2" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="E2" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="E2" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="E2" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="E2" value="3">
+                        </label>
+                    </div>
+                    <span>Efisien</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>21. Menurut Anda seberapa jelas menu yang ditampilkan pada aplikasi Whoosh?</legend>
+                <div class="radio-group">
+                    <span>Jelas</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="P4" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="P4" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="P4" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="P4" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="P4" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="P4" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="P4" value="-3">
+                        </label>
+                    </div>
+                    <span>Membingungkan</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>22. Menurut Anda seberapa praktis aplikasi Whoosh saat digunakan?</legend>
+                <div class="radio-group">
+                    <span>Tidak praktis</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="E3" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="E3" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="E3" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="E3" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="E3" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="E3" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="E3" value="3">
+                        </label>
+                    </div>
+                    <span>Praktis</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>23. Bagaimana menurut Anda tentang penyajian terhadap tata letak pada aplikasi Whoosh?</legend>
+                <div class="radio-group">
+                    <span>Terorganisir</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="E4" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="E4" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="E4" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="E4" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="E4" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="E4" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="E4" value="-3">
+                        </label>
+                    </div>
+                    <span>Berantakan</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>24. Menurut Anda seberapa atraktif/menarik aplikasi Whoosh?</legend>
+                <div class="radio-group">
+                    <span>Atraktif</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="A5" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="A5" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="A5" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="A5" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="A5" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="A5" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="A5" value="-3">
+                        </label>
+                    </div>
+                    <span>Tidak atraktif</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>25. Menurut Anda apakah aplikasi Whoosh ramah pengguna?</legend>
+                <p>Contoh: mudah dipamahi dan digunakan, serta tidak mempersulit Anda -> ramah pengguna
+                </p>
+                <div class="radio-group">
+                    <span>Ramah pengguna</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="A6" value="3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="A6" value="2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="A6" value="1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="A6" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="A6" value="-1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="A6" value="-2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="A6" value="-3">
+                        </label>
+                    </div>
+                    <span>Tidak ramah pengguna</span>
+                </div>
+            </fieldset>
+    
+            <fieldset class="aspect">
+                <legend>26. Menurut Anda apakah aplikasi Whoosh menawarkan hal-hal baru dan berbeda dari yang lain (inovatif)?</legend>
+                <div class="radio-group">
+                    <span>Konservatif</span>
+                    <div class="radio-buttons">
+                        <label>
+                            <div>1</div>
+                            <input type="radio" name="N4" value="-3" required>
+                        </label>
+                        <label>
+                            <div>2</div>
+                            <input type="radio" name="N4" value="-2">
+                        </label>
+                        <label>
+                            <div>3</div>
+                            <input type="radio" name="N4" value="-1">
+                        </label>
+                        <label>
+                            <div>4</div>
+                            <input type="radio" name="N4" value="0">
+                        </label>
+                        <label>
+                            <div>5</div>
+                            <input type="radio" name="N4" value="1">
+                        </label>
+                        <label>
+                            <div>6</div>
+                            <input type="radio" name="N4" value="2">
+                        </label>
+                        <label>
+                            <div>7</div>
+                            <input type="radio" name="N4" value="3">
+                        </label>
+                    </div>
+                    <span>Inovatif</span>
+                </div>
+            </fieldset>
+            
+            <button type="submit" onclick="submitForm(event)">Submit</button>
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Aliyah Nisa Lathifah. All rights reserved.</p>
+            <p><a href="mailto:aliyahnlathifah@gmail.com">
+                <img src="./images/email.png" alt="Email Icon" class="email-icon">
+                aliyahnlathifah@gmail.com</a></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

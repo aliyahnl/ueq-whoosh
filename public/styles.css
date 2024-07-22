@@ -1,0 +1,402 @@
+body {
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 20px;
+    padding-top: 75px;
+    background-color: #f6e6ea;
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    color: #191919;
+    font-weight: 600;
+    padding: 5px 0;
+    transition: all;
+    transition-duration: all 300ms;
+    border-bottom: 1px solid #c7828200;
+}
+
+nav ul li a:hover {
+    border-bottom: 1px solid #b71c1c;
+    color: #b71c1c;
+}
+
+nav div img {
+    width: 30px;
+}
+
+.landing-container {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 28px;
+}
+
+.landing-container h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #333;
+}
+.landing-container p {
+    padding-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.button-container .btn {
+    background-color: #b71c1c;
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button-container .btn:hover {
+    font-weight: 600;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.pragmaticHedonicTable-font p {
+    font-size: 14px;
+}
+
+.image-box {
+    max-width: 735px;
+    margin: 0 auto;
+    margin-bottom: 20px; /* Tambahkan margin bawah untuk memberikan jarak dengan kotak deskripsi */
+}
+
+.image-box .header-image {
+    width: 100%; /* Make the image responsive */
+    max-width: 735px; /* Set a max width to prevent it from being too large */
+    max-height: 160px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.description-box {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+}
+
+.description-box2 {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0 20px;
+    border: none;
+    border-bottom: 2px solid #c78282;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder {
+    color: #9e9e9e;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-bottom: 2px solid #b71c1c;
+}
+
+fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.radio-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.radio-buttons label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px;
+}
+
+.radio-buttons div {
+    margin-bottom: 5px;
+}
+
+.radio-buttons input[type="radio"] {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid #5f6368;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.radio-group2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.radio-buttons2 {
+    margin-bottom: 10px;
+}
+
+.radio-buttons2 input[type="radio"] {
+    display: none;
+}
+
+.radio-buttons2 label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.radio-buttons2 label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 1px solid #5f6368;
+    margin-right: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+
+.radio-buttons2 input[type="radio"]:checked + label::before {
+    background-color: #005cc8;
+    box-shadow: inset 0 0 0 4px #ffffff;
+}
+
+button {
+    background-color: #ffffff;
+    color: #a7062f;
+    border: 2px solid #a7062f;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #a7062f;
+    color: white;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#results {
+    margin-top: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content ul li {
+    font-size: 14px; /* Sesuaikan ukuran font sesuai kebutuhan */
+}
+
+#resultsTable .table {
+    width: 50%; /* Atur lebar tabel */
+    margin: auto; /* Pusatkan tabel */
+}
+
+#resultsTable th, #resultsTable td {
+    padding: 8px 12px; /* Atur padding untuk sel */
+    text-align: center; /* Pusatkan teks di dalam sel */
+}
+
+#pragmaticHedonicTable .table {
+    width: 45%; /* Atur lebar tabel */
+    margin: auto; /* Pusatkan tabel */
+}
+
+th {
+    background-color: #dbd0d0; /* Warna latar belakang header */
+}
+
+td {
+    background-color: #ffffff; /* Warna latar belakang sel */
+}
+
+table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+footer {
+    background-color: white;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-content .email-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.canvas-container {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto; /
+}
+
+#aspectChart {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.canvas-container1 {
+    height: 250px;
+    margin: 0 auto; /* Center horizontally within its parent */
+}
+
+
+@media (max-width: 768px) {
+    .description-box, form, #results {
+        padding: 10px;
+    }
+
+    fieldset {
+        padding: 10px;
+    }
+
+    .radio-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .radio-buttons label {
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%;
+        font-size: 14px;
+    }
+}

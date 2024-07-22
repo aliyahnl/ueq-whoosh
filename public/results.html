@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil UEQ</title>
+    <link rel="icon" href="./images/UEQ.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="landing.html">
+                <img src="./images/UEQ.png" alt="UEQ">
+            </a>
+        </div>
+        <ul>
+            <li><a href="intro.html">Kuesioner</a></li>
+            <li><a href="results.html">Hasil</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="results" class="content">
+            <h1>Hasil UEQ Aplikasi Whoosh</h1>
+            
+            <div id="resultsContentSum"></div>
+            
+            <h3>Skala UEQ</h3>
+            <div id="resultsContent"></div>
+            <h4>Grafik Skala UEQ</h4>
+            <p>Keterangan:
+                <ul>
+                    <li><i>Attractiveness</i> (Daya Tarik): Menilai seberapa menarik dan menyenangkan tampilan aplikasi bagi pengguna.</li>
+                    <li><i>Perspicuity</i> (Kejelasan): Mengukur kemudahan pengguna dalam mempelajari dan menggunakan aplikasi.</li>
+                    <li><i>Efficiency</i> (Efisiensi): Menilai seberapa cepat dan mudah pengguna menyelesaikan tugas mereka dalam aplikasi.</li>
+                    <li><i>Dependability</i> (Ketepatan): Mengukur kepercayaan pengguna terhadap aplikasi, apakah aplikasi bisa diandalkan dan tidak membuat frustrasi.</li>
+                    <li><i>Stimulation</i> (Stimulasi): Menilai seberapa menarik dan menyenangkan interaksi pengguna dengan aplikasi.</li>
+                    <li><i>Novelty</i> (Kebaruan): Mengukur kesan pengguna terhadap inovasi dan keunikan yang ditawarkan aplikasi.</li>
+                </ul>
+            </p>
+    
+            <br>
+            <h3>Kualitas Pragmatis dan Hedonis</h3>
+            <div id="pragmaticHedonicTable"></div>
+            <p>Keterangan:</p>
+            <div class="pragmaticHedonicTable-font">
+                <p>
+                    Aspek daya tarik (<i>attractiveness</i>) adalah aspek murni valensi (fokus terhadap kesan 
+                    keseluruhan atau emosional), aspek kejelasan (<i>perspicuity</i>), efisien (<i>efficiency</i>), dan
+                    ketepatan (<i>dependability</i>) adalah aspek kualitas pragmatis (berorientasi pada tujuan), sedangkan aspek
+                    stimulasi (<i>stimulation</i>) dan kebaruan (<i>novelty</i>) adalah aspek kualitas hedonik
+                    (tidak berorientasi pada tujuan, berkaitan dengan pengalaman emosional dan estetika). 
+                </p>
+            </div>
+        </div>
+    
+        <div id="results" class="content">
+            <div style="width: 70%; height: 80%; margin: auto;">
+                <h3><i>Benchmark</i> UEQ</h3>
+                <canvas id="ueqChart"></canvas>
+            </div>
+            <div id="benchmarkTable"></div>
+        </div>
+    
+        <div id="results" class="content">
+            <h3>Rangkuman Jawaban Responden</h3>
+            <div id="resultsContentUsiaGender"></div>
+    
+            <br>
+            <h3>Distribusi Jawaban Responden</h3>
+            <div id="answerDistributionTable"></div>
+        </div>    
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Aliyah Nisa Lathifah. All rights reserved.</p>
+            <p><a href="mailto:aliyahnlathifah@gmail.com">
+                <img src="./images/email.png" alt="Email Icon" class="email-icon">
+                aliyahnlathifah@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="ueqChart.js"></script>
+</body>
+</html>
