@@ -1,3 +1,20 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    padding: 20px; /* Padding untuk konten utama */
+}
+
 body {
     font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 20px;
@@ -98,7 +115,7 @@ h4 {
     text-align: center;
 }
 
-.pragmaticHedonicTable-font p {
+.keterangan-font p {
     font-size: 14px;
 }
 
@@ -296,13 +313,10 @@ button:hover {
     margin: auto; /* Pusatkan tabel */
 }
 
-#resultsTable th, #resultsTable td {
-    padding: 8px 12px; /* Atur padding untuk sel */
-    text-align: center; /* Pusatkan teks di dalam sel */
-}
+
 
 #pragmaticHedonicTable .table {
-    width: 45%; /* Atur lebar tabel */
+    width: 70%; /* Atur lebar tabel */
     margin: auto; /* Pusatkan tabel */
 }
 
@@ -331,10 +345,9 @@ footer {
     background-color: white;
     padding: 10px 0;
     width: 100%;
-    bottom: 0;
-    left: 0;
     text-align: center;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
 }
 
 .footer-content {
@@ -378,8 +391,10 @@ footer {
 
 
 @media (max-width: 768px) {
-    .description-box, form, #results {
+    .description-box, form, #results, .landing-container, .canvas-container, .canvas-container1 {
         padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     fieldset {
@@ -398,5 +413,16 @@ footer {
     button {
         width: 100%;
         font-size: 14px;
+    }
+
+    #answerDistributionTable .table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    #answerDistributionTable .th, .td {
+        white-space: nowrap;
     }
 }

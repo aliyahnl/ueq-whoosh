@@ -127,7 +127,7 @@ function createBenchmarkTable(data) {
     
     const header = table.createTHead();
     const headerRow = header.insertRow(0);
-    const headers = ['Skala', 'Rata-rata', 'Perbandingan dengan Benchmark', 'Interpretasi'];
+    const headers = ['Aspek', 'Rata-rata', 'Perbandingan dengan Benchmark', 'Interpretasi'];
     
     headers.forEach(headerText => {
         const cell = document.createElement('th');

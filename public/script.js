@@ -110,21 +110,65 @@ function displayResults(data) {
         novelty: calculateAverage(aspects['novelty'])
     };
 
-    // Menampilkan hasil
+    const aspectNames = {
+        attractiveness: "Daya Tarik (<i>Attractiveness</i>)",
+        perspicuity: "Kejelasan (<i>Perspicuity</i>)",
+        efficiency: "Efisiensi (<i>Efficiency</i>)",
+        dependability: "Ketepatan (<i>Dependability</i>)",
+        stimulation: "Stimulasi (<i>Stimulation</i>)",
+        novelty: "Kebaruan (<i>Novelty</i>)"
+    };
+
+    // Fungsi untuk mendapatkan keterangan evaluasi berdasarkan nilai
+    const getEvaluation = (value) => {
+        if (value > 0.8) return "Positif";
+        if (value > 0 && value <= 0.8) return "Netral cenderung positif";
+        if (value >= -0.8 && value <= 0) return "Netral cenderung negatif";
+        if (value < -0.8) return "Negatif";
+        return "";
+    };
+
+    // Membuat tabel untuk menampilkan hasil
+    let tableHtml = `
+    <table border="1">
+        <tr>
+            <th>Aspek</th>
+            <th>Nilai</th>
+            <th>Evaluasi</th>
+        </tr>
+    `;
+
     for (let key in aspectAverages) {
         if (aspectAverages[key] !== "") {
-            resultsDiv.innerHTML += `<p><b><i>${key.charAt(0).toUpperCase() + key.slice(1)}</i>: ${aspectAverages[key]}</b></p>`;
+            tableHtml += `
+            <tr>
+                <td>${aspectNames[key]}</td>
+                <td>${aspectAverages[key]}</td>
+                <td>${getEvaluation(aspectAverages[key])}</td>
+            </tr>
+            `;
         }
     }
 
+    tableHtml += `</table>`;
+
+    resultsDiv.innerHTML = tableHtml;
     resultsDiv.style.display = 'block';  // Menampilkan div hasil
 
-    // Membuat elemen canvas untuk grafik rata-rata aspek
+    // Menambahkan elemen pembatas untuk jarak
+    const separator = document.createElement('div');
+    separator.style.height = '35px';  // Anda dapat mengatur tinggi sesuai kebutuhan
+    resultsDiv.appendChild(separator);
+
+    // Membuat elemen judul dan canvas untuk grafik rata-rata aspek
+    const chartTitle = document.createElement('h3');
+    chartTitle.innerText = 'Grafik Skala UEQ';
     const chartContainer = document.createElement('div');
     chartContainer.className = 'canvas-container';
     const chartCanvas = document.createElement('canvas');
     chartCanvas.id = 'aspectChart';
     chartContainer.appendChild(chartCanvas);
+    resultsDiv.appendChild(chartTitle);
     resultsDiv.appendChild(chartContainer);
 
     // Membuat plugin untuk menambahkan background warna
@@ -192,7 +236,6 @@ function displayResults(data) {
     // Kirim nilai rata-rata ke ueqChart.js
     updateChartWithAverages(aspectAverages);
 }
-
 function updateChartWithAverages(averages) {
     // Memanggil fungsi yang ada di ueqChart.js untuk memperbarui chart
     updateUeqChart(averages);
@@ -341,7 +384,7 @@ function displayAnswerDistribution(data) {
     
     const header = table.createTHead();
     const headerRow = header.insertRow(0);
-    const headers = ['Nr', 'Item', '1', '2', '3', '4', '5', '6', '7', 'Skala'];
+    const headers = ['Nr', 'Item', '1', '2', '3', '4', '5', '6', '7', 'Aspek'];
     
     headers.forEach(headerText => {
         const cell = document.createElement('th');
@@ -427,13 +470,22 @@ function displayPragmaticHedonicTable(data) {
     const pragmaticQuality = calculatePragmaticQuality();
     const hedonicQuality = calculateHedonicQuality();
 
+    // Fungsi untuk mendapatkan keterangan evaluasi berdasarkan nilai
+    const getEvaluation = (value) => {
+        if (value > 0.8) return "Positif";
+        if (value > 0 && value <= 0.8) return "Netral cenderung positif";
+        if (value >= -0.8 && value <= 0) return "Netral cenderung negatif";
+        if (value < -0.8) return "Negatif";
+        return "";
+    };
+
     // Membuat tabel
     const table = document.createElement('table');
     table.classList.add('table');
 
     const header = table.createTHead();
     const headerRow = header.insertRow(0);
-    const headers = ['Kualitas Pragmatis dan Hedonis', 'Nilai'];
+    const headers = ['Kualitas Pragmatis dan Hedonis', 'Nilai', 'Evaluasi'];
 
     headers.forEach(headerText => {
         const cell = document.createElement('th');
@@ -455,6 +507,9 @@ function displayPragmaticHedonicTable(data) {
 
         const valueCell = tableRow.insertCell(1);
         valueCell.appendChild(document.createTextNode(row.value));
+
+        const evaluationCell = tableRow.insertCell(2);
+        evaluationCell.appendChild(document.createTextNode(getEvaluation(row.value)));
     });
 
     tableContainer.appendChild(table);
