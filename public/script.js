@@ -34,14 +34,43 @@ function nextPage() {
 
 async function submitForm(event) {
     event.preventDefault();
+    
     const form = document.getElementById('combinedForm');
+    const fieldsets = document.querySelectorAll('fieldset');
+    let isValid = true;
+
+    fieldsets.forEach(fieldset => {
+        const radios = fieldset.querySelectorAll('input[type="radio"]');
+        const textInputs = fieldset.querySelectorAll('input[type="text"]');
+        let hasSelectedRadio = false;
+
+        // Cek apakah fieldset memiliki input radio dan text dan jika ada yang dipilih
+        if (radios.length > 0) {
+            hasSelectedRadio = Array.from(radios).some(radio => radio.checked);
+        }
+        const hasTextInput = Array.from(textInputs).some(input => input.value.trim() !== '');
+
+        // Validasi untuk radio atau input text
+        if (radios.length > 0 && !hasSelectedRadio || textInputs.length > 0 && !hasTextInput) {
+            isValid = false;
+            fieldset.style.borderColor = "red";
+        } else {
+            fieldset.style.borderColor = "";
+        }
+    });
+
+    if (!isValid) {
+        alert("Mohon isi semua pertanyaan sebelum mengirim.");
+        return;
+    }
+
+    // Jika valid, lanjutkan pengiriman data
     const formData = new FormData(form);
     const data = {};
 
     formData.forEach((value, key) => {
         data[key] = isNaN(parseInt(value)) ? value : parseInt(value);
     });
-    
 
     try {
         const response = await fetch('/api/responses', {
@@ -55,11 +84,11 @@ async function submitForm(event) {
         if (response.ok) {
             window.location.href = 'thankyou.html';
         } else {
-            alert('Failed to submit response.');
+            alert('Gagal mengirimkan respons.');
         }
     } catch (error) {
         console.error('Error:', error);
-        alert('Failed to submit response.');
+        alert('Gagal mengirimkan respons.');
     }
 }
 
